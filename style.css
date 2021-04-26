@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+	background: radial-gradient(grey, maroon);
+	font-family: "Trirong",  serif ;
+	font-weight: 300px;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: lightblue;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin-top : 20px;
+	padding: 10px;
+	list-style: none;
+	
+}
+
+nav a {
+	display: incline-block;
+	margin-left:  80px;
+
+}
+
+nav a:hover {
+	background-color: lightgreen;
+}
+
+nav a.active {
+	background-color: pink;
+	color: white;
+	cursor: default;
+}
+
+
+
+
