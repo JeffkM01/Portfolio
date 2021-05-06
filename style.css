@@ -1,57 +1,135 @@
 body {
 	margin: 0;
-	background: radial-gradient(grey, maroon);
-	font-family: "Trirong",  serif ;
-	font-weight: 300px;
+	padding: 0;
+	font-family:sans-serif;
+	background:lightblue;	
 }
 
-.container{
-	width: 80%;
-	margin: 0 auto;
+/* Import Design Styles */
+@import url("") only screen;
+ 
+
+/* Flex Layout Styles */
+body {
+display: -webkite-flex ;
+display: flex;
+-webkite-flex flow : row wrap;
+flex-flow: row wrap; 
 }
 
-header {
-	background: lightblue;
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 26px;
 }
 
-header::after {
-	content: '';
-	display: table;
-	clear: both;
+
+.fa-facebook {
+	  background: #3B5998;
+  color: black;
+
 }
 
-.logo {
-	float: left;
-	padding: 10px 0;
+.fa-twitter{
+	  background: #55ACEE;
+  color: black;
+
 }
+
+.fa-instagram {
+  background: #125688;
+  color: black;
+}
+
+.me {
+	margin-left:10px;
+}
+
+
+
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: DarkSalmon;
+}
+
+
 
 nav {
-	float: right;
+	width: 100%;
+	background: Darksalmon;
 }
 
-nav ul {
-	margin-top : 20px;
-	padding: 10px;
+ul {
+	width: 5%;
+	margin: 0 auto;
+	padding: 0 ;
+}
+
+ul li{
 	list-style: none;
+	padding: 5px;
+}
+
+ul li:hover {
+	background: lightgreen;
+}
+
+
+ul li a {
+	color: blue;
+	text-decoration:none ;
+}
+
+ul li a:active {
+	background-color: yellow;
+}
+
+.navi {
+	width:100% ;
+	padding: 0;
+	background: cherry;
+	text-align: right;
+	box-sizing: border-box;
+	display: none;
+}
+
+
+.unorder {
 	
 }
 
-nav a {
-	display: incline-block;
-	margin-left:  80px;
-
-}
-
-nav a:hover {
-	background-color: lightgreen;
-}
-
-nav a.active {
-	background-color: pink;
-	color: white;
-	cursor: default;
+.email{
+	
 }
 
 
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media only screen and (max-width: 480px)
 
+	ul {
+		width: 100%;
+		display:
+	}
+	
+	ul li {
+	display: block;
+	text-align: center;
+	}
+	
+	
+	
 
+	
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/

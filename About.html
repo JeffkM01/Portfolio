@@ -3,37 +3,14 @@
 <html>
 
 <head>
-<style>
-body {
-	background-color: maroon;
-
-}
-
-
-img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 15px;
-}
-
-.center {
-	text-align: center;
-}
-
-.Bio {
-margin-left: 29px;
-}
-
-.Ed {
-margin-right: 29px;
-}
-
-#img1 {
-margin-top: 20px;
-
-}
+<link rel="stylesheet" type="text/css" href="abt.style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About</title>
+
+<style>
+
+
+#more {display: none;}
 
 </style>
 </head>
@@ -42,25 +19,29 @@ margin-top: 20px;
 <body>
 
 
+
+
 <h1 class="center">Jeff Kimani</h1>
 
-<div>
-<img src="img/Screenshot1.png"  width="132" height="180" >
-</div>
 
-<div id="img1">
-<a href="Index.html"><img src="img1/csd.webp" width="150px"  height="80px" alt="logo" ></a>
-</div>
+<img src="img/Screenshot1.png"  width="132" height="180" >
+
+
+
+<button><a href="index.html">Home</a></button><br/>
 
 
 <div class="Bio">
 <div style="float:left">
-    <h3>Date of Birth</h3> 
-    <p>10/24/2003</p><br/>
-    <h3>Nationality</h3>
-    <p>African American</p><br/>
+    <h3>Age</h3> 
+    <p>17 yrs old</p>
     <h3>Driving license</h3>
     <p>Intermediate Driving License</p>
+    
+    <h3>About me</h3>
+    <p>I like playing RPG games</p>
+    
+    
 </div>
 </div>
 
@@ -68,8 +49,8 @@ margin-top: 20px;
 <div style="float:right">
 <h2>Education</h2>
 
-<p>Am still a Student at Lewis and Clark</p>
-<p><strong>CSD</strong> - Computer Software Development is the class</br> I attend at Lewis & Clark</p>
+<p>Studied at Lewis and Clark Career Center</p>
+<p><strong>CSD</strong>- I attend Computer Software Development</br> at Lewis and Clark</p>
 
 <h2>Address</h2>
 <p>2400 Zumbehl Rd, St Charles MO</p>
@@ -77,16 +58,45 @@ margin-top: 20px;
 
 <h3>Skills</h3>
 
-<ul class="circle">
+<ul>
 <li>Html</li>
 <li>Sql</li>
 <li>JavaScript</li>
-<li>good at Team work</li>
+<li>good at Team work</li><span id="dots">...</span><span id="more">
 <li>Attentive to Instructions</li>
+<li>Debugging(i use the Console)</li>
+<li>Responsive design</li>
+<li>Communicate well with my colleagues</li>
+<li>Am able to manage my time properly</li></span>
 </ul>
-</div>
-</div>
+<button onclick="myFunction()" id="myBtn">Read more</button>
 
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+
+<footer>
+
+
+</footer>
 
 </body>
 

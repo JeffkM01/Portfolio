@@ -3,44 +3,73 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <style>
-
-
-
-h1{
-text-align: center;
+#example1 {
+  border: 3px solid;
+  padding: 10px;
+  box-shadow: 5px 10px blue;
 }
 
-#img {
-border-radius: 15px;
-float:left;
-margin-right: 20px;
-margin-bottom: 40px;
-}
 
-#clock {
-border-radius: 29px;
-margin-right: auto;
-margin-left: auto;
-width: 30%;
-}
+
 </style>
 </head>
 
 <body>
+
+
+<div id="example1">
 <h1 style="color:blue">Projects</h1>
+</div><br/>
 
-<button><a href="Index.html">Home</a></br></button>
+<button><a href="index.html">Home</a></button><br/>
 
-<div id="clock">
-<a href="clock.html"><img src="img5/GoldClock.jpg"></a>
-</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<div id="img">
-<a href="Holiday.html"> <img src="img4/clock.jpeg"></a>
-</div>
+
+
+<p><strong>click on the images</strong></p>
+
+<p id="clock">
+<a href="clock.html"><img src="img5/clock.png" height="320px" width="330px"></a>
+</p><br/>
+
+<p id="Pik">
+<a href="Holiday.html"> <img src="img4/countd.png" height="320px" width="330px"></a>
+</p><br/>
+
+<a href="calculator.html"><img src="img9/calc.png" height="320px" width="330px"> </a><br/>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
 </body>
 
 </html>
