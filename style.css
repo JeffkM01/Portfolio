@@ -25,7 +25,7 @@ flex-flow: row wrap;
 
 
 .fa-facebook {
-	  background: #3B5998;
+  background: #3B5998;
   color: black;
 
 }
@@ -42,10 +42,14 @@ flex-flow: row wrap;
 }
 
 .me {
-	margin-left:10px;
+margin-left: 10px;
 }
 
-
+.1logo {
+	margin-left: 30px;
+	margin-right: ;
+	border-radius: 10px;
+}
 
 
 
@@ -100,8 +104,8 @@ ul li a:active {
 }
 
 
-.unorder {
-	
+.image {
+	margin-top: 20px;
 }
 
 .email{
@@ -113,7 +117,16 @@ ul li a:active {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 480px) {
+
+
+	.navi {
+		width: 100%;
+	}
+	
+	.me {
+		width: 100%;
+	}
 
 	ul {
 		width: 100%;
@@ -125,9 +138,15 @@ ul li a:active {
 	text-align: center;
 	}
 	
-	
-	
-
+	body {
+	display: -webkite-flex ;
+	display: flex;
+	-webkite-flex flow : row wrap;
+	flex-flow: row wrap; 
+   }
+   
+   
+	}
 	
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
