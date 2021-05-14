@@ -1,20 +1,15 @@
-body{
-background-image: url('img3/city.jpg');
-background-size: cover;
+body {
+background: url("img1/witcher.jpg");
 background-repeat: no-repeat;
-
+background-size: cover;
 }
 
 
 
 
-/* Import Design Styles */
-@import url("") only screen;
- 
 
 
 
-/* Flex Layout Styles */
 
 
 
@@ -30,15 +25,11 @@ background-repeat: no-repeat;
    ============================================
 */
 @media only screen and (max-width: 480px) {
-	#canvas {
-		width: 100%;
-		
-	}
+		body {
+	background: lightblue;
 	
-	body {
-		background: lightblue;
-	}
-	
+}
+
 
 }
 
@@ -52,11 +43,9 @@ background-repeat: no-repeat;
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-@media only screen and (min-width:481px) {
-	#canvas {
-		width:
-	}
+
+@media only screen and (min-width:481px)  {
+	
 	
 	
 }
-

@@ -23,11 +23,18 @@ body {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
-@media only screen and (max-width: 480px)
-
-
+@media only screen and (max-width: 480px) {
+		.calculatory {
+			width: 100%;
+				}
+				
+				
+				
+		body {
+			background-image: linear-gradient(to right, red, yellow);
+		}
 	
-	
+}
 	
 
 	
@@ -36,3 +43,4 @@ body {
    ===================================================
 */
 
+@media only screen and (min-width:481px) 

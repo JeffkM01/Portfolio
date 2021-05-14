@@ -52,3 +52,38 @@ margin-top: 20px;
 }
 
 
+
+
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media only screen and (max-width: 480px) {
+	
+	.Education {
+		margin-right: 89px;
+	}
+	
+	
+}
+
+
+	
+	
+	
+
+
+	
+	
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+@media only screen and (min-width:481px) {
+	
+	
+	
+}
+
+
