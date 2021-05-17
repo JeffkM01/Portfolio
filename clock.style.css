@@ -53,8 +53,8 @@ background-repeat: no-repeat;
    ===================================================
 */
 @media only screen and (min-width:481px) {
-	#canvas {
-		width:
+	body {
+		background-color: lightblue;
 	}
 	
 	

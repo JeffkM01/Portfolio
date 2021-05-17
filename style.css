@@ -47,8 +47,7 @@ margin-left: 10px;
 
 .1logo {
 	margin-left: 30px;
-	margin-right: ;
-	border-radius: 10px;
+	margin-right: 
 }
 
 
@@ -106,6 +105,8 @@ ul li a:active {
 
 .image {
 	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .email{
@@ -144,6 +145,14 @@ ul li a:active {
 	-webkite-flex flow : row wrap;
 	flex-flow: row wrap; 
    }
+   
+   .image {
+	   display: block;
+	   margin-left: auto;
+	   margin-right: auto;
+	   width: 50%;
+   }
+   
    
    
 	}

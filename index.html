@@ -17,6 +17,54 @@
 
 <style>
 
+
+
+.flip-box {
+  background-color: coral;
+  width: 300px;
+  height: 215px;
+  border: 2px solid black;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-image: linear-gradient(to right, yellow, red);
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -37,9 +85,7 @@
 	</nav>
 	
 	
-	<article class="image">
-	<img src="img.1/lewis.jpg"  height="147px" width="160px">
-	</article>
+	
 	
 	
 	
@@ -50,6 +96,58 @@
      <p>Am an Aspiring programmer eager to learn new things</p>
      <p>I don't know as much JavaScript as i know Html and Css; <br/>I know were to find tutorials that will guide me<br/> to learn more about Javascript
      and also am willing to learn from you</p>
+    
+    
+    	
+    
+    
+    <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <p>Flip box</p>
+      <img src="img.1/lewis.jpg"  height="147px" width="160px">
+    </div>
+    <div class="flip-box-back">
+	<p>my school</p>
+      <a href="https://www.stcharlessd.org/lewisandclarkcareercenter"><img src="img.1/lewis.jpg"  height="147px" width="160px"></a>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -72,16 +170,16 @@
 	<h3>Frameworks Essentials</h3>
 	
 	<ol>
-	<p>Communication</p>
-	<p>Team work</p>
-	<p>Self Motivation</p>
-	<p>Decision making</p>
-	<p>Adaptability</p>		
-	<p>Responsibilty</p>
-	<p>Professionalism</p>
-	<p>Work Ethic</p>
-	<p>Integrity</p>
-	<p>Professional Development<p>
+	<p>Communication - asking your mentor where you don't understand</p>
+	<p>Team work - seek ideas from your group members</p>
+	<p>Self Motivation - pushing yourself to complete assignments</p>
+	<p>Decision making - choices you make in class & being careful not to jump to conclusion quickly</p>
+	<p>Adaptability - adjusting to new languages</p>		
+	<p>Responsibilty - turning your work in time</p>
+	<p>Professionalism - wearing work appropriate clothes</p>
+	<p>Work Ethic - understanding the value of your work</p>
+	<p>Integrity - being proud of the choices you make</p>
+	<p>Professional Development - respect & listen to your mentor<p>
 	<ol>
 
 </div>
