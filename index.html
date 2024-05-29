@@ -3,114 +3,25 @@
 <html>
 
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-   
-<link rel="stylesheet" type="text/css" href="gp_reset.css" meta="all">
-<link rel="stylesheet" type="text/css" href="gp_layout.css" meta="screen">
-<link rel="stylesheet" type="text/css" href="gp_print.css"  meta="print">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" type="text/css" href="gp_reset.css" meta="all">
+	<link rel="stylesheet" type="text/css" href="gp_layout.css" meta="screen">
+	<link rel="stylesheet" type="text/css" href="gp_print.css" meta="print">
 
 
-<link rel="stylesheet" type="text/css"  href="style.css">
+	<link rel="stylesheet" type="text/css" href="indexx.css">
 
 
-<title>Home</title>
-
-
-<style>
+	<title>Home</title>
 
 
 
-.flip-box {
-  background-color: coral;
-  width: 300px;
-  height: 215px;
-  border: 2px solid black;
-  perspective: 1000px;
-}
+	<style>
+	</style>
 
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  background-image: linear-gradient(to right, yellow, red);
-  color: black;
-}
-
-.flip-box-back {
-  background-image: linear-gradient(to right, green, blue, purple);
-  color: white;
-  transform: rotateY(180deg);
-}
-
-img {
-	border-radius: 15px;
-}
-
-
-
-
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 
-  border-radius: 20%;
-  
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-
-
-
-
-
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -119,7 +30,7 @@ img {
 	<nav class="Navi">
 
 	<ul>
-	<li><a href="index.html">Home</a></li>
+	<li> <a href="index.html">Home</a> </li>
 	<li><a href="Contact.html">Contact</a>
 	<li><a href="About.html">About</a>
 	<li><a href="Projects.html">Projects</a>
@@ -129,92 +40,8 @@ img {
 	</nav>
 	
 	
-	
-	
-	
-<!--	
-	<div class="me">
 
-	<h2>More about me</h2>
-     <p>I like designing Websites and I plan on pursing web design </p>
-     <p>I have learnt how to utilize programming tools:<br/> Scite,Visual Studio Code,Github and Terminal</p>
-     <p>Am an Aspiring programmer eager to learn new things</p>
-     <p>I don't know as much JavaScript as i know Html and Css; <br/>I know were to find tutorials that will guide me<br/> to learn more about Javascript
-     and also am willing to learn from you</p>
 
-    
-    	
-    
-    
-    <div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      <p>Flip box</p>
-      <img src="img.1/lewis.jpg"  height="147px" width="160px">
-    </div>
-    <div class="flip-box-back">
-	<p>my school</p>
-      <a href="https://www.stcharlessd.org/lewisandclarkcareercenter"><img src="img.1/lewis.jpg"  height="147px" width="160px"></a>
-    </div>
-  </div>
-</div>
-    
-
-    
-    
-
-     <h2>Skills USA</h2>
-	<h4>Service Orientation</h4>
-	<p><q>I've learned that people will forget what you said,people will forget what you did,
-	but people will never forget how you made them feel</q> by Maya Angelou</p>
-	
-	<h4>Professional Development</h4>
-	<p><q>Remember that the six moost expensive words in bussiness are:'We've always done it that way' </q>
-	by Catherine DeVrye<br/></p>
-	
-	
-	
-
-	
-
-	<h3>Frameworks Essentials</h3>
-	
-	<ol>
-	<p>Communication - asking your mentor where you don't understand</p>
-	<p>Team work - seek ideas from your group members</p>
-	<p>Self Motivation - pushing yourself to complete assignments</p>
-	<p>Decision making - choices you make in class & being careful not to jump to conclusion quickly</p>
-	<p>Adaptability - adjusting to new languages</p>		
-	<p>Responsibilty - turning your work in time</p>
-	<p>Professionalism - wearing work appropriate clothes</p>
-	<p>Work Ethic - understanding the value of your work</p>
-	<p>Integrity - being proud of the choices you make</p>
-	<p>Professional Development - respect & listen to your mentor<p>
-	<ol>
-
-</div>
--->	
-	
-	
-	<script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
-	
-	
 	
 </body>
 
