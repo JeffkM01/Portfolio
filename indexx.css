@@ -26,6 +26,157 @@ flex-flow: row wrap;
 margin-left: 10px;
 }
 
+
+
+
+
+
+nav {
+	width: 100%;
+	background: Darksalmon;
+}
+
+ul {
+	width: 5%;
+	margin: 0 auto;
+	padding: 0 ;
+}
+
+ul li{
+	list-style: none;
+	padding: 5px;
+}
+
+ul li:hover {
+	background: lightblue;
+}
+
+
+ul li a {
+	color: blue;
+	text-decoration:none ;
+}
+
+ul li a:active {
+	background-color: lightblue;
+}
+
+.navi {
+	width:100% ;
+	padding: 0;
+	background: cherry;
+	text-align: right;
+	box-sizing: border-box;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media only screen and (max-width: 480px) {
+
+
+	.navi {
+		width: 100%;
+	}
+	
+	.me {
+		width: 100%;
+	}
+
+	ul {
+		width: 100%;
+		display:
+	}
+	
+	ul li {
+	display: block;
+	text-align: center;
+	}
+	
+	body {
+	display: -webkite-flex ;
+	display: flex;
+	-webkite-flex flow : row wrap;
+	flex-flow: row wrap; 
+   }
+   
+   .icons {
+	   margin-left: 128px;
+   }
+   
+   
+	}
+	
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+@media only screen and (min-width:481px) {
+
+
+.navi  {
+	width: 100%;
+}
+
+.icons {
+	margin-left: 431px;
+}
+
+
+}
+
+
+
+
+
+
+
+/*
+body {
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	background:lightblue;	
+}
+
+/* Import Design Styles */
+@import url("") only screen;
+ 
+
+/* Flex Layout Styles */
+body {
+display: -webkite-flex ;
+display: flex;
+-webkite-flex flow : row wrap;
+flex-flow: row wrap; 
+}
+
+
+
+
+
+
+.me {
+margin-left: 10px;
+}
+
 .1logo {
 	margin-left: 30px;
 	margin-right: 
@@ -146,3 +297,5 @@ ul li a:active {
 
 
 }
+
+*/
