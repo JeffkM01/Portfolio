@@ -53,17 +53,17 @@ li {
 	display: inline;
 }
 
-	li a {
-		display: block;
-		color: black;
-		text-align: center;
-		padding: 20px 40px;
-		text-decoration: none;
-	}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 20px 40px;
+	text-decoration: none;
+}
 
-		li a:hover {
-			background-color: lightcyan;
-		}
+li a:hover {
+	background-color: lightcyan;
+}
 
 .active {
 	background-color: hotpink;
