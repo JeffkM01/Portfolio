@@ -9,8 +9,11 @@
 
 
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+body 
+{
+    box-sizing: border-box;
+
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -38,13 +41,26 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: lightgreen;
-  padding: 20px;
+  background-image: linear-gradient(to right, pink, lightgrey);
+  padding: 15px;
 }
 
 .email {
 hover: red;
 margin-bottom: 30px;
+}
+
+.email2
+{
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: darksalmon;
 }
 
 </style>
@@ -54,93 +70,90 @@ margin-bottom: 30px;
 
 <body>
 
-<div class="link">
-<a href="index.html"><h3 style="color:green">Home</h3></a>
-</div>
+    <ul>
+        <li> <a href="index.html">Home</a> </li>
+        <li><a href="Contact.html">Contact</a>
+        <li><a href="About.html">About</a>
+        <li><a href="Projects.html">Projects</a>
+    </ul>
 
+    <div class="email2">
+    <p>
+        You can fill out the form or email me at:
+        <div class="email">
+            <a href="mailto:kimanijeff17@gmail.com">kimanijeff17@gmail.com</a>
+        </div>
 
-
-<h3 style="color:red">Contact Form</h3>
-
-
-
-
-<!-- modify this form HTML and place wherever you want your form -->
-
-<div class="container">
-<form
-  action="https://formspree.io/f/xqkwengw"
-  method="POST">
-  <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-  <label for="Email">Your Email</label>
-    <input type="text" id="Email" name="_replyto"  placeholder="Email Address.."   >
-
-  
-   <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value="uk">United Kingdom</option>
-      <option value="China">China</option>
-      <option value="Ukraine">Ukraine</option>
-      <option value="Poland">Poland</option>
-      <option value="India">India</option>
-      <option value="Japan">Japan</option>
-      <option value="Germany">Germany</option>
-      <option value="Sweden">Sweden</option>
-      <option value="Switzerland">Switzerland</option>
-      <option value="Italy">Italy</option>
-      <option value="Greece">Greece</option>
-      <option value="Thailand">Thailand</option>
-      <option value="Russia">Russia</option>
-      <option value="South Africa">South Africa</option>
-      <option value="Portugal">Portugal</option>
-      <option value="South Korea">South Korea</option>
-      <option value="Israel">Israel</option>
-      <option value="Belgium">Belgium</option>
-      
-    </select>
-  
-  
-  
-  
-
-  
-  
-  
-  <label>
-    Your message:
-    <textarea name="message" placeholder="Write something.."   style="height:200px"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <input type="submit" value="submit">
-</form>
-</div><br/>
+    </p>
+    </div>
 
 
 
 
 
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <div class="container">
+        <form action="https://formspree.io/f/xrgnwgak"
+              method="POST">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="Email">Your Email</label>
+            <input type="text" id="Email" name="_replyto" placeholder="Email Address..">
+
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="China">China</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="Germany">Germany</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Italy">Italy</option>
+                <option value="Greece">Greece</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Russia">Russia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Portugal">Portugal</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Israel">Israel</option>
+                <option value="Belgium">Belgium</option>
+
+            </select>
 
 
 
 
-<div class="email">
-<h3 style="color:red">My Email</h3>
-<a href="mailto:jkimani@stcharlessd.org">Jkimani@stcharlessd.org</a>
-</div>
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </label>
 
-<h3 style="color:red">LinkedIn Info</h3>
-<a href="https://www.linkedin.com/in/jeff-kimani-86b366211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX3ap5hrsRhutdIowiYcbRg%3D%3D">My LinkeIn Info</a>
+            <!-- your other form fields go here -->
 
+            <input type="submit" value="submit">
+        </form>
+    </div><br />
+
+
+    <footer>
+    <a href="https://www.linkedin.com/in/jeff-kimani-86b366211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX3ap5hrsRhutdIowiYcbRg%3D%3D">
+    <img src="social_media_logos/LinkedIn.png" alt="LinkedIn logo" style="width:30px;height:30px;">
+    </a>
+
+
+    </footer>
 
 </body>
 
