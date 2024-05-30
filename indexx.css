@@ -1,86 +1,52 @@
 body {
 	margin: 0;
-	padding: 0;
-	font-family:sans-serif;
-	background:lightblue;	
+	padding: 5px;
+	background-image: linear-gradient(to right, pink, lightgrey);
 }
 
-/* Import Design Styles */
-@import url("") only screen;
+/* Import Design Styles 
+@import url("") only screen;*/
  
 
-/* Flex Layout Styles */
+/* Flex Layout Styles 
 body {
 display: -webkite-flex ;
 display: flex;
 -webkite-flex flow : row wrap;
 flex-flow: row wrap; 
 }
+*/
 
 
-
-
-
-
-.me {
-margin-left: 10px;
-}
-
-
-
-
-
-
-nav {
-	width: 100%;
-	background: Darksalmon;
-}
 
 ul {
-	width: 5%;
-	margin: 0 auto;
-	padding: 0 ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Darksalmon;
 }
 
-ul li{
-	list-style: none;
-	padding: 5px;
+li {
+  float: left;
+  display: inline;
 }
 
-ul li:hover {
-	background: lightblue;
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
 }
 
-
-ul li a {
-	color: blue;
-	text-decoration:none ;
+li a:hover:not(.active) {
+  background-color: lightcyan;
 }
 
-ul li a:active {
-	background-color: lightblue;
+.active {
+	background-color: cadetblue;
 }
-
-.navi {
-	width:100% ;
-	padding: 0;
-	background: cherry;
-	text-align: right;
-	box-sizing: border-box;
-	display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
