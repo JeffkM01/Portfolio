@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 
 <!--   Index.html
@@ -110,6 +111,126 @@ var x = setInterval(function() {
 <a href="calculator.html" class="next round">&#8250;</a>
 </div>
 
+-->
+
+
+
+
+	
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christmas Countdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to right, red, yellow);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 30px;
+      color: black;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    #demo {
+      font-size: 40px;
+      color: #333;
+    }
+
+    img {
+      border-radius: 15px;
+      max-width: 100%;
+      height: auto;
+      margin: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .next1 {
+      margin: 40px;
+    }
+
+    .previous, .next {
+      font-size: 24px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button><a href="index.html">Home</a></button>
+
+  <h1>Days Until Christmas</h1>
+  <p id="demo"></p>
+
+  <h2>Countdown Clock</h2>
+
+  <div class="image-container">
+    <img src="img2/chrismas.jpg" alt="Christmas Image 1" width="400">
+    <img src="img7/chris.jpg" alt="Christmas Image 2" width="400">
+  </div>
+
+  <script>
+    // Set the date we're counting down to (Update year as needed)
+    var countDownDate = new Date("Dec 25, 2025 00:00:00").getTime();
+
+    // Update the countdown every second
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Merry Christmas!";
+      }
+    }, 1000);
+  </script>
+
+  <div class="next1">
+    <a href="clock.html" class="previous round">&#8249;</a>
+    <a href="calculator.html" class="next round">&#8250;</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jeff Kimani | Christmas Countdown</p>
+  </footer>
+
+</body>
+</html>
 
 
 
